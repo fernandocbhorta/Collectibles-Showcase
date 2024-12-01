@@ -4,6 +4,7 @@ import { getAll } from '../_services/connect.js';
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
 
+// a different way to display the list of models. Instead of allowing the user to choose the type of list to display, this component will display all models. Clicking on a model will take the user to the details page for that model using dynamic routing, pre-rendered using Link 
 export default function Page() {
 
     const [list, setList] = useState([]);

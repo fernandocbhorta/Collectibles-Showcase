@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react';
 
 
-// images page
+// random images from the API
 export default function PublicAPIs() {
   const [facts, setFacts] = useState([]);
   const [error, setError] = useState(null);
@@ -47,8 +47,8 @@ export default function PublicAPIs() {
           <li key={index}>            
             <ul>
               {Object.entries(fact).map(([key, value], i) => (
-                <li key={i} className="max-w-4xl mx-auto my-3 p-3 bg-slate-700 rounded-lg shadow-lg">
-                  <img className="max-w-full  m-4 p-4" src={value} />
+                <li key={i} className="max-w-4xl mx-auto my-3 p-6 bg-slate-700 rounded-lg shadow-lg">
+                  <img className="max-w-full rounded" src={value} />
                 </li>
               ))}
             </ul>

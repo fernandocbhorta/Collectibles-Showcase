@@ -47,7 +47,7 @@ export default function PublicAPIs() {
             <ul>
               {Object.entries(fact).map(([key, value], i) => (
                 <li key={i}>
-                  <img className="w-full h-auto object-cover" src={value} />
+                  <img className="w-full h-auto object-cover rounded" src={value} />
                 </li>
               ))}
             </ul>

@@ -83,7 +83,7 @@ export default function ModelList({ chosen, criteria }) {
                       {
                         // a bit of code to display the image as an image and the rest as text
                       key === "image" ? (
-                        <img className="w-full h-auto object-cover" src={value} />
+                        <img className="w-full h-auto object-cover rounded" src={value} />
                       ) : (
                         <p className="capitalize text-sm">{lowerCaseName(`${key}: ${value}`)}</p>
                       )}                      

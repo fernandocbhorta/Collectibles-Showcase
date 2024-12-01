@@ -19,7 +19,7 @@ export default function ItemList({ items, setItems, onItemSelect, criteria }) {
       <p className="m-2">
         <button
           className={`p-2 m-2 ${
-            apiType === "maker" ? "bg-slate-800 font-bold" : "bg-slate-700 text-slate-400"
+            apiType === "maker" ? "bg-slate-600 font-bold" : "bg-slate-700 text-slate-400"
           } rounded`}
           onClick={() => selectApi("maker")}
         >
@@ -27,7 +27,7 @@ export default function ItemList({ items, setItems, onItemSelect, criteria }) {
         </button>
         <button
           className={`p-2 m-2 ${
-            apiType === "driver" ? "bg-slate-800 font-bold" : "bg-slate-700 text-slate-400"
+            apiType === "driver" ? "bg-slate-600 font-bold" : "bg-slate-700 text-slate-400"
           } rounded`}
           onClick={() => selectApi("driver")}
         >
@@ -35,7 +35,7 @@ export default function ItemList({ items, setItems, onItemSelect, criteria }) {
         </button>
         <button
           className={`p-2 m-2 ${
-            apiType === "team" ? "bg-slate-800 font-bold" : "bg-slate-700 text-slate-400"
+            apiType === "team" ? "bg-slate-600 font-bold" : "bg-slate-700 text-slate-400"
           } rounded`}
           onClick={() => selectApi("team")}
         >
@@ -43,7 +43,7 @@ export default function ItemList({ items, setItems, onItemSelect, criteria }) {
         </button>        
         <button
           className={`p-2 m-2 ${
-            apiType === "year" ? "bg-slate-800 font-bold" : "bg-slate-700 text-slate-400"
+            apiType === "year" ? "bg-slate-600 font-bold" : "bg-slate-700 text-slate-400"
           } rounded`}
           onClick={() => selectApi("year")}
         >

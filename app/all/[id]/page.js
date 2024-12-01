@@ -3,6 +3,7 @@
 import { getDetails } from "../../_services/connect.js";
 import { useEffect, useState } from "react";
 
+// This component displays the details of a selected model in a nice card
 export default function Page({ params }) {
     const [details, setDetails] = useState([]);
     
@@ -28,12 +29,10 @@ export default function Page({ params }) {
                 <ul>
                 {Object.entries(model).map(([key, value], i) => (
                     <li key={i}>
-                      {
-                        // a bit of code to display the image as an image and the rest as text
-                      key === "image" ? (
-                        <img className="w-full h-auto object-cover" src={value} />
+                      {key === "image" ? (
+                        <img className="w-full h-auto object-cover rounded" src={value} />
                       ) : (
-                        <p className="capitalize text-sm">{key}: {value}</p>
+                        <p className="uppercase text-sm">{key}: {value}</p>
                       )}                      
                     </li>
                   ))}
