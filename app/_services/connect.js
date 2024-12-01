@@ -1,3 +1,6 @@
+// APIs hosted on my own website. I had to resort to some "tricks" to get this working with just 3 functions.
+
+// this is the api that will be used to get the list of filters (maker, driver, team, year)
 export async function getType(api) {
     const baseUrl = "https://horta.classicgames.com.br/api/collectables/";
     const response = await fetch(baseUrl + api + "s/", {
@@ -12,6 +15,7 @@ export async function getType(api) {
     return await response.json();
   }
 
+// this is the api that will be used to get the list of items based on the filter selected
 export async function getList(api, id) {
     const baseUrl = "https://horta.classicgames.com.br/api/collectables/";
     const response = await fetch(baseUrl + api + "s/?id=" + id, {
@@ -26,6 +30,7 @@ export async function getList(api, id) {
     return await response.json();
   }
 
+  // this is the api that will be used to get the details of the item selected
   export async function getDetails(id) {
     const baseUrl = "https://horta.classicgames.com.br/api/collectables/";
     const response = await fetch(baseUrl + "models/?id=" + id, {

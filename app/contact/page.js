@@ -1,6 +1,7 @@
 import React from 'react';
 import { FaLinkedin, FaGithub } from 'react-icons/fa';
 
+// Contact sheet with links to my social media and email
 const ContactSheet = () => {
   return (
     <div className="max-w-md mx-auto p-4 bg-slate-800 rounded-lg shadow-md text-slate-300">

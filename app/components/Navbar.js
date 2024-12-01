@@ -4,6 +4,7 @@ import Link from "next/link";
 import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 
+// a nice navbar component
 const Navbar = () => {
     const [nav, setNav] = useState(false);
     const links = [    

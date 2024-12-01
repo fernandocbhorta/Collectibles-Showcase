@@ -2,6 +2,8 @@
 
 import { useState, useEffect } from 'react';
 
+
+// Landing page. Nothing but a random picture of a collectable item retrieved from the API.
 export default function PublicAPIs() {
   const [facts, setFacts] = useState([]);
   const [error, setError] = useState(null);
@@ -19,7 +21,7 @@ export default function PublicAPIs() {
       }
       const data = await response.json();
       console.log(data);
-      setFacts(data); // Set facts directly to the data array
+      setFacts(data); 
       setError(null);
     } catch (e) {
       setError(e.message);
@@ -28,7 +30,7 @@ export default function PublicAPIs() {
 
   useEffect(() => {
     fetchFacts();
-  }, []); // Run the effect only once after the initial render
+  }, []); 
 
   if (error) return (
     <div>

@@ -1,8 +1,6 @@
-// pages/api-docs.js
 import React from 'react';
 
-
-
+// API Documentation
 const apiList = [
   {
     endpoint: '/api/collectables/models',

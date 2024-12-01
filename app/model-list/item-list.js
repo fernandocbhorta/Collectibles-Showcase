@@ -4,6 +4,7 @@ import { useCallback } from "react";
 import { useState } from "react";
 import * as api from "../_services/connect.js";
 
+// this component displays a list of items (makers, drivers, teams, years) fetched from the API
 export default function ItemList({ items, setItems, onItemSelect, criteria }) {
   const [apiType, setApiType] = useState("maker");  
 
@@ -51,6 +52,7 @@ export default function ItemList({ items, setItems, onItemSelect, criteria }) {
       </p>
       {items.map((item) => (        
         <div key={item.id}>
+          {/* workaround #2: adding API called as attribute to the item retrieved */}
           <p className="hidden">{item.apiType = apiType}</p>          
           <Item {...item} onSelect={() => (onItemSelect(item))} />
         </div>
