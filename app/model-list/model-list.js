@@ -62,7 +62,7 @@ export default function ModelList({ chosen, criteria }) {
 }
 
   return (
-    <div className="p-4">
+    <div  className="max-w-4xl mx-5 my-5 p-5 bg-slate-800 rounded-lg shadow-lg">
       <h2 className="text-2xl font-bold text-slate-400">Model List</h2>
       
       <ul>
@@ -77,7 +77,7 @@ export default function ModelList({ chosen, criteria }) {
               <p className="capitalize">{lowerCaseName(model.title)}</p>
               {/* expands and retrieves when the model is clicked */}
               {expandedModelId === model.id && modelDetails && (
-                <ul>
+                <ul className="max-w-4xl mx-auto my-3 p-3 bg-slate-700 rounded-lg shadow-lg">
                 {Object.entries(modelDetails).map(([key, value], i) => (
                     <li key={i}>
                       {

@@ -18,12 +18,13 @@ export default function Page() {
     return (
         <main>
         <h1 className='p-3 m-3 text-4xl text-center font-bold text-slate-400'>All models</h1>
-        
-        {list.map((fact, index) => (
-          <li key={index} className="text-sm text-slate-300">
-            <Link href={`all/${fact.id}`} >{fact.title} </Link>
-          </li>
-        ))}
+        <div className="max-w-4xl mx-auto my-5 p-5 bg-slate-800 rounded-lg shadow-lg">
+          {list.map((fact, index) => (
+            <li key={index} className="text-sm text-slate-300">
+              <Link href={`all/${fact.id}`} >{fact.title} </Link>
+            </li>
+          ))}
+        </div>
         </main>
     );
 }

@@ -36,8 +36,8 @@ export default function Page() {
 
   return (
     <main>
-      <div className="flex">
-        <ul>
+      <div className="flex mx-auto">
+        <ul className="max-w-3xl my-5 p-5 bg-slate-800 rounded-lg shadow-lg">
           <ItemList
             items={items}
             setItems={setItems}

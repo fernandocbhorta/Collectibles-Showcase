@@ -12,13 +12,13 @@ const Navbar = () => {
         id: 1,
         link: "/model-list",
         target: "_self",
-        description: "Model List",
+        description: "Filter Models",
       },
       {
         id: 2,
         link: "/all",
         target: "_self",
-        description: "All Models",
+        description: "List All",
       },
       {
         id: 3,

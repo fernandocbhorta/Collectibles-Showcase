@@ -42,13 +42,13 @@ export default function PublicAPIs() {
   return (
     <div>
         <h3 className='p-3 m-3 text-4xl text-center font-bold text-slate-400 '>images</h3>
-      <ul className="justify-start flex-auto">
+      <ul className="max-w-4xl mx-auto my-5 p-5 bg-slate-800 rounded-lg shadow-lg">
         {facts.map((fact, index) => (
           <li key={index}>            
             <ul>
               {Object.entries(fact).map(([key, value], i) => (
-                <li key={i}>
-                  <img className="max-w-lg h-auto object-cover m-4 p-4" src={value} />
+                <li key={i} className="max-w-4xl mx-auto my-3 p-3 bg-slate-700 rounded-lg shadow-lg">
+                  <img className="max-w-full  m-4 p-4" src={value} />
                 </li>
               ))}
             </ul>
