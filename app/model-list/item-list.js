@@ -12,7 +12,7 @@ export default function ItemList({ items, setItems, onItemSelect, criteria }) {
     setApiType(criteria); 
     const newItems = await api.getType(criteria);
     setItems(newItems); 
-  }, [items, setApiType, setItems]); 
+  }, [setApiType, setItems]); 
 
   return (
     <main>

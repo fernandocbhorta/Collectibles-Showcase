@@ -9,7 +9,7 @@ export default function Page({ params }) {
     
     useEffect(() => {
         loadDetails(details);
-    }, []);
+    }, [details]);
     async function loadDetails() {
         const { id } = await params;
         const data = await getDetails(id);
