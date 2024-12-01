@@ -44,3 +44,18 @@ export async function getList(api, id) {
     }
     return await response.json();
   }
+
+  // this is the api that will be used to get the details of the item selected
+  export async function getAll() {
+    const baseUrl = "https://horta.classicgames.com.br/api/collectables/models/";
+    const response = await fetch(baseUrl, {
+      method: 'GET',
+      withCredentials: true,    
+      crossorigin: true,    
+      
+    });
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
+    return await response.json();
+  }

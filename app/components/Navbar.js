@@ -10,19 +10,31 @@ const Navbar = () => {
     const links = [    
       {
         id: 1,
-        link: "model-list",
+        link: "/model-list",
         target: "_self",
         description: "Model List",
       },
       {
-      id: 2,
-      link: "documentation",
+        id: 2,
+        link: "/all",
+        target: "_self",
+        description: "All Models",
+      },
+      {
+        id: 3,
+        link: "/image",
+        target: "_self",
+        description: "Random Images",
+      },      
+      {
+      id: 4,
+      link: "/documentation",
       target: "_self",
       description: "API documentation",
     },    
     {
-      id: 3,
-      link: "contact",
+      id: 5,
+      link: "/contact",
       target: "_self",
       description: "Contact",
     },

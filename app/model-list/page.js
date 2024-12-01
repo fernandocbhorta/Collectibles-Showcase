@@ -21,8 +21,7 @@ export default function Page() {
   const loadItems = useCallback(async () => {    
       const fetchedItems = await api.getType(apiType);
       setItems(fetchedItems);
-      setApiType(apiType);
-      console.log(fetchedItems);    
+      setApiType(apiType); 
   }, [apiType]); 
 
   useEffect(() => {

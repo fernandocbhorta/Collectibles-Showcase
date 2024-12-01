@@ -20,14 +20,12 @@ export default function ModelList({ chosen, criteria }) {
   // this gets the list of models matching the selected criteria id from the current API
   async function fetchmodelIdeas(chosen, criteria) {
     const data = await api.getList(criteria, chosen);
-    console.log(data);  
     return data; 
   }
   
   // this gets the details of the selected model
   async function fetchModelDetails(id) {
     const data = await api.getDetails(id);
-    console.log(data);
     return data[0]; 
   }
 
