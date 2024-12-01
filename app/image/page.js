@@ -41,7 +41,7 @@ export default function PublicAPIs() {
 
   return (
     <div>
-        <h3 className='p-3 m-3 text-4xl text-center font-bold text-slate-400 '>my_collectables</h3>
+        <h3 className='p-3 m-3 text-4xl text-center font-bold text-slate-400 '>images</h3>
       <ul className="justify-start flex-auto">
         {facts.map((fact, index) => (
           <li key={index}>            
