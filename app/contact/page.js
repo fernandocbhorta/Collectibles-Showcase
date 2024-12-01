@@ -38,7 +38,7 @@ const ContactSheet = () => {
             I&apos;m a student at SAIT in the Software Development program, heading to the last semester and looking forward to improve my skills in web development.
         </div>
         <div className="flex items-center p-2 m-2 text-justify">
-            My first experiences with Internet and programmin were in 1997, creating websites on GeoCities using pure HTML and carsets ("mods") for Grand Prix 2, which somehow can still be found online. Time went by, I moved away from the field, but since 2023 I&apos;ve been back to it, learning new technologies and languages, and studying abroad to become a full stack developer.       
+            My first experiences with Internet and programmin were in 1997, creating websites on GeoCities using pure HTML and carsets (&quot;mods&quot;) for Grand Prix 2, which somehow can still be found online. Time went by, I moved away from the field, but since 2023 I&apos;ve been back to it, learning new technologies and languages, and studying abroad to become a full stack developer.       
         </div>
         <div className="flex items-center p-2 m-2 text-justify">
             I&apos;m currently learning React and React-Native, Next.JS, Node.JS, having some experience with Python, C#, Maui, Java, some frameworks such as TailwindCSS, Bootstrap, and others. On the database side, I have experience with MySQL, starting to learn more about Oracle, NoSQL. My go to language is php, which I used to create my personal website and the APIs used in this project.    
