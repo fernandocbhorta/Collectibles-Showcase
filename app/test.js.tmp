@@ -8,7 +8,7 @@ export default function PublicAPIs() {
 
   async function fetchFacts() {
     try {
-      const response = await fetch('https://horta.classicgames.com.br/api/collectables/images/?id=1', {
+      const response = await fetch('http://10.0.0.230/hortaplays/api/collectables/models/', {
         method: 'GET',
         withCredentials: true,    
         crossorigin: true,    
@@ -32,21 +32,21 @@ export default function PublicAPIs() {
 
   if (error) return (
     <div>
-      <h2>Loading API...</h2>
+      <h2>Load API</h2>
       <p>{error}</p>
     </div>
   );
 
   return (
     <div>
-        <h3 className='p-3 m-3 text-4xl text-center font-bold text-slate-400'>my_collectables</h3>
       <ul>
         {facts.map((fact, index) => (
-          <li key={index}>            
+          <li key={index}>
+            <h3>Fact {index + 1}</h3>
             <ul>
               {Object.entries(fact).map(([key, value], i) => (
                 <li key={i}>
-                  <img className="w-full h-auto object-cover" src={value} />
+                  <strong>{key}:</strong> {value}
                 </li>
               ))}
             </ul>
