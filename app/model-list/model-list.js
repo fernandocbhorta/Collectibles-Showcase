@@ -74,7 +74,7 @@ export default function ModelList({ chosen, criteria }) {
               onClick={() => handlemodelClick(model.id)}
               className={expandedModelId === model.id ? 'my-8 text-lg font-bold max-w-screen-sm' : ''}
             >
-              <p className="capitalize">{lowerCaseName(model.title)}</p>
+              <p className="capitalize cursor-pointer">{lowerCaseName(model.title)}</p>
               {/* expands and retrieves when the model is clicked */}
               {expandedModelId === model.id && modelDetails && (
                 <ul className="max-w-4xl mx-auto my-3 p-3 bg-slate-700 rounded-lg shadow-lg">
