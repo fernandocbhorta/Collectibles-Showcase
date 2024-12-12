@@ -197,6 +197,21 @@ const apiList = [
   }
 ]`,
   },
+  {
+    endpoint: `/api/collectables/images/?img={id}`,
+    method: 'GET',
+    description: 'get all images from a specific model.',
+    response: `[
+  {
+    "image": "https://horta.classicgames.com.br/collectables/images/0783 (1).jpg",
+    "id": 0
+  },
+  {
+    "image": "https://horta.classicgames.com.br/collectables/images/0783 (2).jpg",
+    "id": 1
+  }
+]`,
+  },
   
 ]
 
@@ -219,5 +234,4 @@ const ApiDocs = () => {
     </div>
   );
 };
-
 export default ApiDocs;

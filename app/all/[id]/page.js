@@ -1,11 +1,12 @@
 "use client";
 
-import { getDetails } from "../../_services/connect.js";
+import { getAllImages, getDetails } from "../../_services/connect.js";
 import { useEffect, useState } from "react";
 
-// This component displays the details of a selected model in a nice card
+// This component displays the details of a selected model in a nice card, including all images related to it
 export default function Page({ params }) {
     const [details, setDetails] = useState([]);
+    const [images, setImages] = useState([]);
     
     useEffect(() => {
         loadDetails(details);
@@ -14,6 +15,8 @@ export default function Page({ params }) {
         const { id } = await params;
         const data = await getDetails(id);
         setDetails(data);        
+        const images = await getAllImages(id);
+        setImages(images);
     }
 
     return (
@@ -29,16 +32,26 @@ export default function Page({ params }) {
                 <ul>
                 {Object.entries(model).map(([key, value], i) => (
                     <li key={i}>
-                      {key === "image" ? (
-                        <img className="w-full h-auto object-cover rounded" src={value} />
-                      ) : (
+                      {key !== "image" ? (
                         <p className="uppercase text-sm">{key}: {value}</p>
+                      ) : (
+                        ""
                       )}                      
                     </li>
                   ))}
                 </ul>
               )}
-             
+
+            {images && (
+                <ul>
+                {images.map((image, i) => (
+                    <li key={i}>
+                      <img className="w-full h-auto object-cover rounded" src={image.image} />
+                    </li>   
+
+                  ))}
+                </ul>
+              )}             
             </h2>
           ))
         )

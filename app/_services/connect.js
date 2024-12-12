@@ -59,3 +59,18 @@ export async function getList(api, id) {
     }
     return await response.json();
   }
+
+  // this is the api to get all images of a certain item
+  export async function getAllImages(id) {
+    const baseUrl = "https://horta.classicgames.com.br/api/collectables/images/?img=" + id;
+    const response = await fetch(baseUrl, {
+      method: 'GET',
+      withCredentials: true,    
+      crossorigin: true,    
+      
+    });
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
+    return await response.json();
+  }
