@@ -46,7 +46,7 @@ export default function Page({ params }) {
                 <ul>
                 {images.map((image, i) => (
                     <li key={i}>
-                      <img className="w-full h-auto object-cover rounded" src={image.image} />
+                      <img className="w-full h-auto object-cover mb-2 rounded" src={image.image} />
                     </li>   
 
                   ))}
