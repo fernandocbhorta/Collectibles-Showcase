@@ -10,7 +10,7 @@ export default function PublicAPIs() {
 
   async function fetchFacts() {
     try {
-      const response = await fetch('https://horta.classicgames.com.br/api/collectables/images/?id=1', {
+      const response = await fetch('https://horta.classicgames.com.br/api/collectibles/images/?id=1', {
         method: 'GET',
         withCredentials: true,    
         crossorigin: true,    
@@ -40,7 +40,7 @@ export default function PublicAPIs() {
 
   return (
     <div className="max-w-6xl mx-auto my-5 p-5 bg-slate-800 rounded-lg shadow-lg">
-        <h3 className='p-3 m-3 text-4xl text-center font-bold text-slate-400'>my_collectables</h3>
+        <h3 className='p-3 m-3 text-4xl text-center font-bold text-slate-400'>my_collectibles</h3>
       <ul>
         {facts.map((fact, index) => (
           <li key={index}>            

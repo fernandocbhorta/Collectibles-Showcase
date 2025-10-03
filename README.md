@@ -1,5 +1,5 @@
-# CollectablesShowcase
- Retrieves a list of collectables from external APIs and displays them to the user
+# collectiblesShowcase
+ Retrieves a list of collectibles from external APIs and displays them to the user
  V1.1
 
 # Fernando Horta

@@ -10,7 +10,7 @@ export default function PublicAPIs() {
 
   async function fetchFacts() {
     try {    
-      const response = await fetch("https://horta.classicgames.com.br/api/collectables/images/?id=" + Math.floor(Math.random()
+      const response = await fetch("https://horta.classicgames.com.br/api/collectibles/images/?id=" + Math.floor(Math.random()
       * 30) + 1, {
         method: 'GET',
         withCredentials: true,    

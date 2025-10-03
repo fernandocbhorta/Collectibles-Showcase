@@ -49,7 +49,7 @@ return (
             href="./"            
             rel="noreferrer"
           >
-            my_collectables
+            my_collectibles
           </a>
         </h1>
       </div>

@@ -3,7 +3,7 @@ import React from 'react';
 // API Documentation
 const apiList = [
   {
-    endpoint: '/api/collectables/models',
+    endpoint: '/api/collectibles/models',
     method: 'GET',
     description: 'a list of of all models.',
     response: `[
@@ -29,7 +29,7 @@ const apiList = [
 
   },
   {
-    endpoint: `/api/collectables/models/?id={id}`,
+    endpoint: `/api/collectibles/models/?id={id}`,
     method: 'GET',
     description: 'all details of a specific model.',
     response: `[
@@ -49,12 +49,12 @@ const apiList = [
     "contents": "BOX, MODEL, STAND",
     "model": "W11 EQ PERFORMANCE",
     "team": "MERCEDES-BENZ",
-    "image": "https://horta.classicgames.com.br/collectables/images/new_305 (5.jpg"
+    "image": "https://horta.classicgames.com.br/collectibles/images/new_305 (5.jpg"
   }
 ]`,
   },
   {
-    endpoint: '/api/collectables/drivers',
+    endpoint: '/api/collectibles/drivers',
     method: 'GET',
     description: 'a list of of all drivers.',
     response: `[
@@ -70,7 +70,7 @@ const apiList = [
 
   },
   {
-    endpoint: `/api/collectables/drivers/?id={id}`,
+    endpoint: `/api/collectibles/drivers/?id={id}`,
     method: 'GET',
     description: 'a list of all models of a specific driver.',
     response: `[
@@ -85,7 +85,7 @@ const apiList = [
 ]`,
   },
   {
-    endpoint: '/api/collectables/teams',
+    endpoint: '/api/collectibles/teams',
     method: 'GET',
     description: 'a list of of all teams.',
     response: `[
@@ -101,7 +101,7 @@ const apiList = [
 
   },
   {
-    endpoint: `/api/collectables/teams/?id={id}`,
+    endpoint: `/api/collectibles/teams/?id={id}`,
     method: 'GET',
     description: 'a list of all models of a specific team.',
     response: `[
@@ -116,7 +116,7 @@ const apiList = [
 ]`,
   },
   {
-    endpoint: '/api/collectables/makers',
+    endpoint: '/api/collectibles/makers',
     method: 'GET',
     description: 'a list of of all makers.',
     response: `[
@@ -132,7 +132,7 @@ const apiList = [
 
   },
   {
-    endpoint: `/api/collectables/makers/?id={id}`,
+    endpoint: `/api/collectibles/makers/?id={id}`,
     method: 'GET',
     description: 'a list of all models of a specific maker.',
     response: `[
@@ -147,7 +147,7 @@ const apiList = [
 ]`,
   },
   {
-    endpoint: '/api/collectables/years',
+    endpoint: '/api/collectibles/years',
     method: 'GET',
     description: 'a list of of all years.',
     response: `[
@@ -163,7 +163,7 @@ const apiList = [
 
   },
   {
-    endpoint: `/api/collectables/years/?id={id}`,
+    endpoint: `/api/collectibles/years/?id={id}`,
     method: 'GET',
     description: 'a list of all models of a specific year.',
     response: `[
@@ -174,40 +174,40 @@ const apiList = [
 ]`,
   },
   {
-    endpoint: '/api/collectables/images',
+    endpoint: '/api/collectibles/images',
     method: 'GET',
     description: 'a random collectable image',
     response: `[
   {
-    "image":"https:\/\/horta.classicgames.com.br\/collectables\/images\/new_399 133294_5-3.jpg"
+    "image":"https:\/\/horta.classicgames.com.br\/collectibles\/images\/new_399 133294_5-3.jpg"
   },
 ]`,
 
   },
   {
-    endpoint: `/api/collectables/images/?id={number}`,
+    endpoint: `/api/collectibles/images/?id={number}`,
     method: 'GET',
     description: 'get X random images. Max 30',
     response: `[
   {
-    "image":"https:\/\/horta.classicgames.com.br\/collectables\/images\/c412t2ja (8).jpg"
+    "image":"https:\/\/horta.classicgames.com.br\/collectibles\/images\/c412t2ja (8).jpg"
   },
   {
-    "image":"https:\/\/horta.classicgames.com.br\/collectables\/images\/0743 (3).jpg"
+    "image":"https:\/\/horta.classicgames.com.br\/collectibles\/images\/0743 (3).jpg"
   }
 ]`,
   },
   {
-    endpoint: `/api/collectables/images/?img={id}`,
+    endpoint: `/api/collectibles/images/?img={id}`,
     method: 'GET',
     description: 'get all images from a specific model.',
     response: `[
   {
-    "image": "https://horta.classicgames.com.br/collectables/images/0783 (1).jpg",
+    "image": "https://horta.classicgames.com.br/collectibles/images/0783 (1).jpg",
     "id": 0
   },
   {
-    "image": "https://horta.classicgames.com.br/collectables/images/0783 (2).jpg",
+    "image": "https://horta.classicgames.com.br/collectibles/images/0783 (2).jpg",
     "id": 1
   }
 ]`,
