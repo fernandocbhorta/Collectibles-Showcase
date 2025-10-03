@@ -1,4 +1,4 @@
-# collectiblesShowcase
+# Collectibles Showcase
  Retrieves a list of collectibles from external APIs and displays them to the user
  V1.1
 
