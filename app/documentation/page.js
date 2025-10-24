@@ -49,7 +49,7 @@ const apiList = [
     "contents": "BOX, MODEL, STAND",
     "model": "W11 EQ PERFORMANCE",
     "team": "MERCEDES-BENZ",
-    "image": "https://horta.classicgames.com.br/collectibles/images/new_305 (5.jpg"
+    "image": "https://horta.dev.br/collectibles/images/new_305 (5.jpg"
   }
 ]`,
   },
@@ -179,7 +179,7 @@ const apiList = [
     description: 'a random collectable image',
     response: `[
   {
-    "image":"https:\/\/horta.classicgames.com.br\/collectibles\/images\/new_399 133294_5-3.jpg"
+    "image":"https:\/\/horta.dev.br\/collectibles\/images\/new_399 133294_5-3.jpg"
   },
 ]`,
 
@@ -190,10 +190,10 @@ const apiList = [
     description: 'get X random images. Max 30',
     response: `[
   {
-    "image":"https:\/\/horta.classicgames.com.br\/collectibles\/images\/c412t2ja (8).jpg"
+    "image":"https:\/\/horta.dev.br\/collectibles\/images\/c412t2ja (8).jpg"
   },
   {
-    "image":"https:\/\/horta.classicgames.com.br\/collectibles\/images\/0743 (3).jpg"
+    "image":"https:\/\/horta.dev.br\/collectibles\/images\/0743 (3).jpg"
   }
 ]`,
   },
@@ -203,11 +203,11 @@ const apiList = [
     description: 'get all images from a specific model.',
     response: `[
   {
-    "image": "https://horta.classicgames.com.br/collectibles/images/0783 (1).jpg",
+    "image": "https://horta.dev.br/collectibles/images/0783 (1).jpg",
     "id": 0
   },
   {
-    "image": "https://horta.classicgames.com.br/collectibles/images/0783 (2).jpg",
+    "image": "https://horta.dev.br/collectibles/images/0783 (2).jpg",
     "id": 1
   }
 ]`,
@@ -223,7 +223,7 @@ const ApiDocs = () => {
       
       {apiList.map((api, index) => (
         <section key={index} className="mb-8">
-          <h2 className="text-xl font-semibold text-gray-200">Endpoint: <code className="px-1 rounded text-lg">https://horta.classicgames.com.br{api.endpoint}</code></h2>
+          <h2 className="text-xl font-semibold text-gray-200">Endpoint: <code className="px-1 rounded text-lg">https://horta.dev.br{api.endpoint}</code></h2>
           <p className="text-gray-400 text-sm mb-4">This endpoint retrieves {api.description}</p>
           <h3 className="text-lg font-medium text-gray-400">Method: {api.method}</h3>
           <h3 className="text-lg font-medium text-gray-400">Response:</h3>

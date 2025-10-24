@@ -27,7 +27,7 @@ const ContactSheet = () => {
         </div>
         <div className="flex items-center p-2 m-2 hover:bg-slate-600 rounded hover:scale-110 duration-200">
           <span className="mr-2">🔗</span>
-          <a href="https://horta.classicgames.com.br/" className="text-slate-300 hover:underline" target="_blank">
+          <a href="https://horta.dev.br/" className="text-slate-300 hover:underline" target="_blank">
             My Hobbies
           </a>
         </div>        

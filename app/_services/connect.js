@@ -2,7 +2,7 @@
 
 // this is the api that will be used to get the list of filters (maker, driver, team, year)
 export async function getType(api) {
-    const baseUrl = "https://horta.classicgames.com.br/api/collectibles/";
+    const baseUrl = "https://horta.dev.br/api/collectibles/";
     const response = await fetch(baseUrl + api + "s/", {
       method: 'GET',
       withCredentials: true,    
@@ -17,7 +17,7 @@ export async function getType(api) {
 
 // this is the api that will be used to get the list of items based on the filter selected
 export async function getList(api, id) {
-    const baseUrl = "https://horta.classicgames.com.br/api/collectibles/";
+    const baseUrl = "https://horta.dev.br/api/collectibles/";
     const response = await fetch(baseUrl + api + "s/?id=" + id, {
       method: 'GET',
       withCredentials: true,    
@@ -32,7 +32,7 @@ export async function getList(api, id) {
 
   // this is the api that will be used to get the details of the item selected
   export async function getDetails(id) {
-    const baseUrl = "https://horta.classicgames.com.br/api/collectibles/";
+    const baseUrl = "https://horta.dev.br/api/collectibles/";
     const response = await fetch(baseUrl + "models/?id=" + id, {
       method: 'GET',
       withCredentials: true,    
@@ -47,7 +47,7 @@ export async function getList(api, id) {
 
   // this is the api that will be used to get the details of the item selected
   export async function getAll() {
-    const baseUrl = "https://horta.classicgames.com.br/api/collectibles/models/";
+    const baseUrl = "https://horta.dev.br/api/collectibles/models/";
     const response = await fetch(baseUrl, {
       method: 'GET',
       withCredentials: true,    
@@ -62,7 +62,7 @@ export async function getList(api, id) {
 
   // this is the api to get all images of a certain item
   export async function getAllImages(id) {
-    const baseUrl = "https://horta.classicgames.com.br/api/collectibles/images/?img=" + id;
+    const baseUrl = "https://horta.dev.br/api/collectibles/images/?img=" + id;
     const response = await fetch(baseUrl, {
       method: 'GET',
       withCredentials: true,    

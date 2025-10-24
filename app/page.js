@@ -10,7 +10,7 @@ export default function PublicAPIs() {
 
   async function fetchFacts() {
     try {
-      const response = await fetch('https://horta.classicgames.com.br/api/collectibles/images/?id=1', {
+      const response = await fetch('https://horta.dev.br/api/collectibles/images/?id=1', {
         method: 'GET',
         withCredentials: true,    
         crossorigin: true,    
